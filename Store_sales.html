@@ -60,13 +60,12 @@
 
       <nav id="navbar" class="nav-menu navbar">
         <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i>
-              <span>Portfolio</span></a></li>
-          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+          <li><a href="./index.html#hero" class="nav-link scrollto active"><i class="bx bx-home"></i>
+              <span>Home</span></a></li>
+          <li><a href="./index.html#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>About Me</span></a>
+          </li>
+          <li><a href="./index.html#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Projects</span></a></li>
+          <li><a href="./index.html#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
     </div>
@@ -75,7 +74,6 @@
   <section id="hero2" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero2-container" data-aos="fade-in">
       <h1>Store Sales Prediction</h1>
-      <p> <span class="typed" data-typed-items="Time Series Forcasting"></span></p>
     </div>
   </section><!-- End Hero -->
   <main id="main">
@@ -108,7 +106,7 @@
               prevent overstocking and increase customer satisfaction. Therefore, <b>we will build a
                 predictive model to help the company predict their future sales.</b>
               Corporación Favorita will <b>evaluate the models we build by Root Mean Squared Log
-              Error (RMSLE).</b> The model with lowest RMSLE will be accepted by the company.
+                Error (RMSLE).</b> The model with lowest RMSLE will be accepted by the company.
             </p>
             <img src="assets/img/StoreSales/image-01.png" alt="">
             <h2>Data Overview</h2>
@@ -130,7 +128,7 @@
               <img src="assets/img/StoreSales/train_head.png" alt="">
               <li>Test: This dataset includes data same as train dataset, but it doesn't have
                 sales of each product. <b>Our goal is to predict the sales of every product in this
-                dataset. </b>The data in test set ranges from 2017/08/16 to 2017/08/31.
+                  dataset. </b>The data in test set ranges from 2017/08/16 to 2017/08/31.
               </li>
               <img src="assets/img/StoreSales/test_head.png" alt="">
               <li>Stores: The information of each stores including city, state, type, and cluster.
@@ -183,24 +181,24 @@
             <p>According to the picture above, day and month are object type, so we need to
               transform them into numerical data for fitting the model. We create month, day
               dummy variables to solve the problem. Below is the picture after transformation:
-              </p>
+            </p>
             <img src="assets/img/StoreSales/image-09.png" alt="">
             <p>We split data into training and validation set. Since the evaluation criteria is RMSLE,
               we take log of our y_train and y_val first.
-              </p>
+            </p>
             <img src="assets/img/StoreSales/image-10.png" alt="">
             <p>Finally, <b>we use XG Boost to build our model.</b> After trying several combinations of the
               parameters, we use the following parameters.</p>
-              <ul>
-                <li>Max_depth:11</li>
-                <li>N_estimators:20000</li>
-                <li>Learning_rate:0.01</li>
-                <li>Subsample:0.99</li>
-                <li>Reg_alpha:10</li>
-                <li>Reg_lambda:0.2
-                </li>
-                <li>colsample_bytree=0.8</li>
-              </ul>
+            <ul>
+              <li>Max_depth:11</li>
+              <li>N_estimators:20000</li>
+              <li>Learning_rate:0.01</li>
+              <li>Subsample:0.99</li>
+              <li>Reg_alpha:10</li>
+              <li>Reg_lambda:0.2
+              </li>
+              <li>colsample_bytree=0.8</li>
+            </ul>
             <img src="assets/img/StoreSales/image-11.png" alt="">
             <p>Last, we predict the test set.
             </p>
@@ -209,7 +207,7 @@
             <p>Since the actual value of the outcome is not provided, we can’t compare the actual
               value with our prediction by ourselves. However, we could obtain our RMSLE once we
               submit our prediction on Kaggle.
-              </p>
+            </p>
             <img src="assets/img/StoreSales/image-13.png" alt="">
             <p>In conclusion, the business value of building model to predict sales is immense. For
               grocery retailers like Corporación Favorita. If we could get a close prediction of
@@ -217,8 +215,12 @@
               potentially decrease food waste. Moreover, predicting sales could increase
               customers satisfaction by ensuring grocery stores has exactly what customers need.</p>
             <ul>
-              <li>Code: https://github.com/zack1284/Store-Sales-Prediction</li>
-              <li>Competition Link: https://www.kaggle.com/c/store-sales-time-series-forecasting/overview</li>
+              <p></p>
+              <p>
+                <a href="https://github.com/zack1284/Store-Sales-Prediction">Complete Version of Code</a>
+              </p>
+              <p> <a href="https://www.kaggle.com/c/store-sales-time-series-forecasting/overview">Kaggle Competetion's
+                  Link</a></p>
             </ul>
 
           </div>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Karate Dojo Analysis</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio - v3.7.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/Wu_Pei-Heng_01.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Pei-Heng (Zack), Wu</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="./index.html#hero" class="nav-link scrollto active"><i class="bx bx-home"></i>
+              <span>Home</span></a></li>
+          <li><a href="./index.html#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>About
+                Me</span></a>
+          </li>
+          <li><a href="./index.html#services" class="nav-link scrollto"><i class="bx bx-server"></i>
+              <span>Projects</span></a></li>
+          <li><a href="./index.html#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i>
+              <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <section id="hero3" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero3-container" data-aos="fade-in">
+      <h1>SnowFlake </h1>
+      <p>Storing and Computing Data</p>
+    </div>
+  </section><!-- End Hero -->
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>SnowFlake - Storing and Computing Data</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>SnowFlake - Storing and Computing Data</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="portfolio-description">
+            <h2>The Introduction to Workflow</h2>
+            <p>First, we will create a database, warehouses, tables in <b>Snowflake</b>. Next, we will pull the data
+              stored in
+              <b>Amazon S3 Bucket </b>into our Snowflake database. We will compute and execute SQL queries in Snowflake.
+              Finally, we will connect <b>Tableau </b>to Snowflake, and visualize the views we created in Snowflake.
+            </p>
+            <img src="assets/img/KarateDojo/schema-03.png" alt="" width="1000px" height="400px">
+
+            <h2>Business Problems</h2>
+            <p>
+              Suppose we want to open several karate dojos across the US. Below are some important questions we should
+              think about.
+            <ul>
+              <li>What are the best locations?</li>
+              <li>Who should we target?</li>
+              <li>What programs/classes should we offer?</li>
+            </ul>
+            </p>
+
+            <h2>Dataset</h2>
+            <p>
+              The dataset we are using is from U.S. Census Bureau.
+            </p>
+            <img src="assets/img/KarateDojo/data-01.png" alt="" width="800px" height="500px">
+            <h2>Zip Codes Data</h2>
+            <img src="assets/img/KarateDojo/data-02.png" alt="" width="1200px" height="700px">
+            <h2>Census Data</h2>
+            <img src="assets/img/KarateDojo/data-03.png" alt="" width="1200px" height="700px">
+            <h2>Creating a Database</h2>
+            <p>In snowfkale, we created a database name "Census" for us to store data from S3.</p>
+            <img src="assets/img/KarateDojo/database.png" alt="">
+            <h2>Creating Data Warehouses</h2>
+            <p>We will need warehouses for computation purposes. We will specify which warehouses we use when we create
+              worksheets.</p>
+            <img src="assets/img/KarateDojo/warehouse.png" alt="">
+            <h2>Creating Worksheets</h2>
+            <p>Worksheets are places that we can execute SQL queries. Before we execute queries, we will need to specify
+              which warehouse we are using. We created 3 worksheets</p>
+            <ul>
+              <li>Census_setup: This is for creating tables, and importing data from S3. It will use "Compute_wh" as our
+                warehouse.</li>
+              <li>Census_analysis: This is for exploring data. It will use "Compute_wh" as our warehouse.</li>
+              <li>Karate Dojo Analysis: This is for karate dojo analysis. It will use "Analytics_wh" as our warehouse.
+              </li>
+            </ul>
+            <img src="assets/img/KarateDojo/worksheets.png" alt="">
+            <h2>Importing Data</h2>
+            <p>We will be using the worksheet name "census_setup" to create tables and import data.</p>
+            <img src="assets/img/KarateDojo/image-01.png" alt="">
+            <img src="assets/img/KarateDojo/image-01.1.png" alt="" width="1200px">
+            <p>In database "census", We could now see the two tables we created and the data in our database. Now, we
+              could execute SQL
+              queries to start our analysis. </p>
+            <img src="assets/img/KarateDojo/image-02.png" alt="">
+            <h2>Analysis</h2>
+            <p>We will use worksheet named "karate dojo analysis" to perform analysis. Once we find what we want to
+              visualize, we could create views and use Tableau to connect with views.
+            </p>
+            <img src="assets/img/KarateDojo/worksheet-karate.png" alt="" width="1200px">
+            <img src="assets/img/KarateDojo/views.png" alt="" width="1200px">
+
+            <h2>Visualization</h2>
+            <p>We first need to connect Tableau to our snowflake database. Next, we could obtain the views that we
+              created for visualization.</p>
+            <img src="assets/img/KarateDojo/tableau.png" alt="" width="1200px">
+            <h2>Top 10 Cities with the Highest Population Density</h2>
+            <img src="assets/img/KarateDojo/image-03.png" alt="" width="1000px" height="500px">
+            <h2>Top 10 Cities With The Highest Number Of Children (Grade 1 to 8) </h2>
+            <img src="assets/img/KarateDojo/image-11.png" alt="" width="1000px" height="500px">
+
+            <h2>Next Step</h2>
+            <p>New York City has the highest population density and the highest number of children (From grades 1 to 8).
+              Therefore, NYC seems to have the largest number of potential customers. Hence, we will choose New York as
+              the city to open our karate dojos. </p>
+
+            <a
+              href="https://public.tableau.com/views/KarateDojoAnalysis/Story1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link">Tableau
+              Public Link</a>
+          </div>
+          <!-- <div class="col-lg-12">
+            <div class="portfolio-info">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: Web design</li>
+                <li><strong>Client</strong>: ASU Company</li>
+                <li><strong>Project date</strong>: 01 March, 2020</li>
+                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+                <button type="submit"
+                  onclick="window.open('./assets/file/GB746 - Snowflake - Best Practices.pdf')">Download!</button>
+              </ul>
+            </div>
+          </div> -->
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
