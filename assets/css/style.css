@@ -72,12 +72,14 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 15px;
   background: #040b14;
   overflow-y: auto;
+  background:rgba(0%, 0%, 0%, 0.70);
 }
 #header .profile img {
   margin: 15px auto;
   display: block;
   width: 120px;
   border: 8px solid #2c2f3f;
+  opacity: 1;
 }
 #header .profile h1 {
   font-size: 24px;
@@ -198,7 +200,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/messageImage_1645323030639.jpg") top center;
+  background: url("../img/homepage_bg.jpg") top center;
   background-size: cover;
 }
 #hero:before {
