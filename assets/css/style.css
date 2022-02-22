@@ -219,7 +219,7 @@ h1, h2, h3, h4, h5, h6 {
   min-width: 300px;
 }
 #hero .hero-container p{
-margin-left: 600px;
+margin-left: 500px;
 margin-right:200px;
 }
 #hero h1 {
@@ -967,6 +967,12 @@ section {
 }
 .contact .info p {
   padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #173b6c;
+}
+.contact .info a {
+  padding: 0 0 10px 15px;
   margin-bottom: 20px;
   font-size: 14px;
   color: #173b6c;
