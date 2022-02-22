@@ -49,13 +49,13 @@
       <div class="profile">
         <img src="assets/img/Wu_Pei-Heng_01.jpg" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Pei-Heng (Zack), Wu</a></h1>
-        <div class="social-links mt-3 text-center">
+        <!-- <div class="social-links mt-3 text-center">
           <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
           <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
           <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
           <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
           <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        </div>
+        </div> -->
       </div>
 
       <nav id="navbar" class="nav-menu navbar">
@@ -125,20 +125,17 @@
 
             <h2>Dataset</h2>
             <p>
-              The dataset we are using is from U.S. Census Bureau.
+              The datasets we are using are from U.S. Census Bureau. One is about zip codes, state, city, etc. The other
+              is census data.
             </p>
             <img src="assets/img/KarateDojo/data-01.png" alt="" width="600px" height="200px">
-            <h2>Zip Codes Data</h2>
-            <img src="assets/img/KarateDojo/data-02.png" alt="" width="1200px" height="700px">
-            <h2>Census Data</h2>
-            <img src="assets/img/KarateDojo/data-03.png" alt="" width="1200px" height="700px">
             <h2>Creating a Database</h2>
             <p>In snowfkale, we created a database name "Census" for us to store data from S3.</p>
-            <img src="assets/img/KarateDojo/database.png" alt="">
+            <img src="assets/img/KarateDojo/database.png" alt=""width="1100px" height="400px">
             <h2>Creating Data Warehouses</h2>
             <p>We will need warehouses for computation purposes. We will specify which warehouses we use when we create
               worksheets.</p>
-            <img src="assets/img/KarateDojo/warehouse.png" alt="">
+            <img src="assets/img/KarateDojo/warehouse.png" alt="" width="1200px" height="400px">
             <h2>Creating Worksheets</h2>
             <p>Worksheets are places that we can execute SQL queries. Before we execute queries, we will need to specify
               which warehouse we are using. We created 3 worksheets</p>
@@ -149,10 +146,9 @@
               <li>Karate Dojo Analysis: This is for karate dojo analysis. It will use "Analytics_wh" as our warehouse.
               </li>
             </ul>
-            <img src="assets/img/KarateDojo/worksheets.png" alt="">
+            <img src="assets/img/KarateDojo/worksheets.png" alt="" width="1100px" height="400px">
             <h2>Importing Data</h2>
             <p>We will be using the worksheet name "census_setup" to create tables and import data.</p>
-            <img src="assets/img/KarateDojo/image-01.png" alt="">
             <img src="assets/img/KarateDojo/image-01.1.png" alt="" width="1200px">
             <p>In database "census", We could now see the two tables we created and the data in our database. Now, we
               could execute SQL
@@ -163,7 +159,6 @@
               visualize, we could create views and use Tableau to connect with views.
             </p>
             <img src="assets/img/KarateDojo/worksheet-karate.png" alt="" width="1200px">
-            <img src="assets/img/KarateDojo/views.png" alt="" width="1200px">
 
             <h2>Visualization</h2>
             <p>We first need to connect Tableau to our snowflake database. Next, we could obtain the views that we

@@ -219,9 +219,8 @@ h1, h2, h3, h4, h5, h6 {
   min-width: 300px;
 }
 #hero .hero-container p{
-  justify-content: center;
-margin-left:400px;
-margin-right:400px;
+margin-left:600px;
+margin-right:200px;
 }
 #hero h1 {
   margin: 0 0 10px 0;
@@ -811,8 +810,8 @@ section {
   justify-content: center;
   margin-left: 125px;
   height: 150px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 
 }
 .services .icon {

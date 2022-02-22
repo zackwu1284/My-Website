@@ -50,16 +50,16 @@
         <img src="assets/img/Wu_Pei-Heng_01.jpg" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="./assets/file/GB746 - Snowflake - Best Practices.pdf"
             download="GB746 - Snowflake - Best Practices">Pei-Heng (Zack), Wu</a></h1>
-        <div class="social-links mt-3 text-center">
+        <!-- <div class="social-links mt-3 text-center">
           <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
           <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
           <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
           <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
           <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        </div>
+        </div> -->
       </div>
 
-      <nav id="navbar" class="nav-menu navbar" >
+      <nav id="navbar" class="nav-menu navbar">
         <ul>
           <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
           <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>About Me</span></a>
@@ -484,9 +484,9 @@
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="services-flters">
               <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-3">Data Analysis</li>
               <li data-filter=".filter-1">Machine Learning</li>
               <li data-filter=".filter-2">Experimental Methods and Analysis</li>
-              <li data-filter=".filter-3">Data Analysis</li>
             </ul>
           </div>
         </div>
@@ -494,35 +494,11 @@
         <div class="row services-container">
           <div class="col-lg-4 col-md-6 icon-box filter-1">
             <div class="icon"><i class="bi bi-briefcase"></i></div>
-            <h4 class="title"><a href="Store_sales.html">Store Sales Prediciton - Building a Predictive Model to Forcast
-                Sales</a></h4>
+            <h4 class="title"><a href="Store_sales.html">Store Sales Prediciton - Data Preprocessing and Model Building
+                with Python </a></h4>
             <p class="description">This is a competition from Kaggle. We performed data preprocessing. We utilized the
               provided training set to build a predictive model with XGBOOST. Lastly, we utilized the provided test set
               to validate our prediction.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box filter-1">
-            <div class="icon"><i class="bi bi-briefcase"></i></div>
-            <h4 class="title"><a href="assets/file/Assignment-7-revise.html">Wine Dataset Analysis - Classifying Whether
-                a Wine is High Quality or Not</a></h4>
-            <p class="description">We utilized R to build several machine learning models for classifying whether a wine
-              is a
-              high-quality wine or not. We aslo evaluated the performance of our models.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box filter-2">
-            <div class="icon"><i class="bi bi-card-checklist"></i></div>
-            <h4 class="title"><a href="./assets/file/Clinic Sales Analysis.html">Clinic Sales Analysis</a></h4>
-            <p class="description">Analyze the experimental results of clinic sales.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box filter-2">
-            <div class="icon"><i class="bi bi-binoculars"></i></div>
-            <h4 class="title"><a href="./assets/file/RocketFuel.html">Rocket Fuel Analysis</a></h4>
-            <p class="description">Analyze the experimental results of evaluating a campaign's efficiency.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box filter-2">
-            <div class="icon"><i class="bi bi-calendar4-week"></i></div>
-            <h4 class="title"><a href="./assets/file/RestaurantGrades.html">RestaurantGrades Analysis</a></h4>
-            <p class="description">Analyze the experimental results of different recommendation algorithms on a
-              restaurant platform.</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box filter-3">
             <div class="icon"><i class="bi bi-calendar4-week"></i></div>
@@ -530,6 +506,32 @@
             <p class="description">Integrating Amazon S3, Snowflake, and Tableau. We pulled the data from Amazon S3
               Bucket and store it in the Snowflake database. Next, we performed SQL queries in Snowflake. Lastly, we
               connected Tableau with Snowflake to perform data visualization.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box filter-1">
+            <div class="icon"><i class="bi bi-briefcase"></i></div>
+            <h4 class="title"><a href="assets/file/Assignment-7-revise.html">Wine Dataset Analysis - Building
+                Machine Learning Models with R</a></h4>
+            <p class="description">We utilized R to build several machine learning models for classifying whether a wine
+              is a
+              high-quality wine or not. We aslo evaluated the performance of our models.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box filter-2">
+            <div class="icon"><i class="bi bi-card-checklist"></i></div>
+            <h4 class="title"><a href="./assets/file/Clinic Sales Analysis.html">Clinic Sales Analysis -
+                Analyzing the Results of an A/B Testing with R
+              </a></h4>
+            <p class="description">We analyzed the results of an A/B Testing including the means, confidence intervals,
+              treatment effect in each group. We genereated plots to help us visualize the means, confidence intervals
+              of
+              treatment and control group.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box filter-2">
+            <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+            <h4 class="title"><a href="./assets/file/RestaurantGrades.html">RestaurantGrades Analysis - Analyzing the
+                Heterogeneous Treatment Effects with R</a></h4>
+            <p class="description">A company conducts A/B testing to find out which algorithm is better in recommending
+              restaurants. However, the treatment effect of this experiment is affected by subgroups(Independent and
+              Chain retaurants). Hence, We utilized R to analyze the heterogeneous treatment effects</p>
           </div>
         </div>
 
@@ -568,9 +570,15 @@
                 <p>+1 608 960 1424</p>
               </div>
 
-              <iframe
+              <div class="phone">
+                <i class="bi bi-linkedin"></i>
+                <h4>Linkedin:</h4>
+                <p>https://www.linkedin.com/in/pei-heng-wu</p>
+              </div>
+
+              <!-- <iframe
                 src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJrdw6sMusB4gRqTdLjzVrrts&key=AIzaSyAyE0UaiybLDFYqEpI460T60gFAlJdDiVk"
-                frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+                frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe> -->
             </div>
 
           </div>
@@ -612,17 +620,12 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer">
+  <!-- <footer id="footer">
     <div class="container">
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
-  </footer>
+  </footer> -->
   <!-- End  Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
