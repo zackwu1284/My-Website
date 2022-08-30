@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Store Sales Prediction - Kaggle Competition</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio - v3.7.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/Wu_Pei-Heng_01.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Pei-Heng (Zack), Wu</a></h1>
+        <!-- <div class="social-links mt-3 text-center">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div> -->
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="./index.html#hero" class="nav-link scrollto active"><i class="bx bx-home"></i>
+              <span>Home</span></a></li>
+          <li><a href="./index.html#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>About
+                Me</span></a>
+          </li>
+          <li><a href="./index.html#services" class="nav-link scrollto"><i class="bx bx-server"></i>
+              <span>Projects</span></a></li>
+          <li><a href="./index.html#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i>
+              <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- <section id="hero2" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero2-container" data-aos="fade-in">
+      <h1>Store Sales Prediction</h1>
+    </div>
+  </section> -->
+  <!-- End Hero -->
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Store Sales Prediction - Kaggle Competition</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Store Sales Prediction</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="portfolio-description">
+            <h2>Problem</h2>
+            <p>
+              Corporación Favorita is a large Ecuadorian-based grocery retailer. Corporación
+              Favorita hope they could predict the number of sales in each store with given data to
+              prevent overstocking and increase customer satisfaction. Therefore, <b>we will build a
+                predictive model to help the company predict their future sales.</b>
+              Corporación Favorita will <b>evaluate the models we build by Root Mean Squared Log
+                Error (RMSLE).</b> The model with lowest RMSLE will be accepted by the company.
+            </p>
+            <img src="assets/img/StoreSales/image-01.png" alt="">
+            <h2>Data Overview</h2>
+            <p>
+              The company offers several datasets for us to build a predictive model. (We get
+              these data on Kaggle)
+            </p>
+            <ul>
+              <li> Oil data: This dataset includes the daily price of oil from 2013-01-01 to 2017-
+                08-31.</li>
+              <img src="assets/img/StoreSales/oil_head.png" alt="">
+              <li>Holiday events: This dataset includes all kinds of holidays from 2012-03-02 to
+                2017-12-26.
+              </li>
+              <img src="assets/img/StoreSales/holiday_head.png" alt="">
+              <li>Train: This data set includes data with the sales of each product in different
+                stores from 2013/01/01 to 2017/08/15.
+              </li>
+              <img src="assets/img/StoreSales/train_head.png" alt="">
+              <li>Test: This dataset includes data same as train dataset, but it doesn't have
+                sales of each product. <b>Our goal is to predict the sales of every product in this
+                  dataset. </b>The data in test set ranges from 2017/08/16 to 2017/08/31.
+              </li>
+              <img src="assets/img/StoreSales/test_head.png" alt="">
+              <li>Stores: The information of each stores including city, state, type, and cluster.
+              </li>
+              <img src="assets/img/StoreSales/stores_head.png" alt="">
+            </ul>
+
+            <h2>Data Preprocessing</h2>
+            <p>
+              First, we check whether each dataset contains null value. According to our analysis,
+              only oil dataset contains null value. (dcoilwtico indicates oil price)
+            </p>
+            <img src="assets/img/StoreSales/image-02.png" alt="">
+            <p>Therefore, if a day contains null oil price, we fill the null value with the oil price from its prior
+              day. </p>
+            <img src="assets/img/StoreSales/image-03.png" alt="">
+            <p>After cleaning all the null values in our dataset, we want to merge all the important
+              columns from 5 datasets into a single table.</p>
+            <ul>
+              <li>Merge the oil data set with train and test data by date. </li>
+              <li>Merge the stores dataset with train and test data by store numbers.</li>
+              <li>Merge the holiday dataset with train and test data by date and city. We also
+                change the holiday types from national, regional, and local into 3 columns
+                with 0 and 1.
+              </li>
+            </ul>
+            <p>Below is the training set after we finished the steps above.
+            </p>
+            <img src="assets/img/StoreSales/image-04.png" alt="">
+            <p>We exclude data before 2016/12/31 because some data are too old, including only
+              2017’s data could give us a better prediction(The data we want to predict ranges from 2017/08/16 to
+              2017/08/31). Next, breakdown the date column into
+              month and day</p>
+            <p>Below is the training set after we finished the steps above.
+            </p>
+            <img src="assets/img/StoreSales/image-05.png" alt="">
+            <p>We add an additional column, weekday, to the table. The logic behind adding this
+              column is because we think weekday might be an important factor. People might go
+              to shopping more often on Friday or weekends, so we decide to add this additional
+              column.</p>
+            <img src="assets/img/StoreSales/image-06.png" alt="">
+            <p>After adding weekday column, we transform categorical data into numerical data
+              using LabelEncoder() because the model we will use later don’t accept categorical
+              data. Below is our code:
+            </p>
+            <img src="assets/img/StoreSales/image-07.png" alt="">
+            <p>Below is the data type by columns:
+            </p>
+            <img src="assets/img/StoreSales/image-08.png" alt="">
+            <p>According to the picture above, day and month are object type, so we need to
+              transform them into numerical data for fitting the model. We create month, day
+              dummy variables to solve the problem. Below is the picture after transformation:
+            </p>
+            <img src="assets/img/StoreSales/image-09.png" alt="">
+            <p>We split data into training and validation set. Since the evaluation criteria is RMSLE,
+              we take log of our y_train and y_val first.
+            </p>
+            <img src="assets/img/StoreSales/image-10.png" alt="">
+            <p>Finally, <b>we use XG Boost to build our model.</b> After trying several combinations of the
+              parameters, we use the following parameters.</p>
+            <ul>
+              <li>Max_depth:11</li>
+              <li>N_estimators:20000</li>
+              <li>Learning_rate:0.01</li>
+              <li>Subsample:0.99</li>
+              <li>Reg_alpha:10</li>
+              <li>Reg_lambda:0.2
+              </li>
+              <li>colsample_bytree=0.8</li>
+            </ul>
+            <img src="assets/img/StoreSales/image-11.png" alt="">
+            <p>Last, we predict the test set.
+            </p>
+            <img src="assets/img/StoreSales/image-12.png" alt="">
+            <h2>Result</h2>
+            <p>Since the actual value of the outcome is not provided, we can’t compare the actual
+              value with our prediction by ourselves. However, we could obtain our RMSLE once we
+              submit our prediction on Kaggle.
+            </p>
+            <img src="assets/img/StoreSales/image-13.png" alt="">
+            <p>In conclusion, the business value of building model to predict sales is immense. For
+              grocery retailers like Corporación Favorita. If we could get a close prediction of
+              the actual sales, we could help businesses avoid overstocking problems, and
+              potentially decrease food waste. Moreover, predicting sales could increase
+              customers satisfaction by ensuring grocery stores has exactly what customers need.</p>
+            <ul>
+              <p></p>
+              <p>
+                <a href="https://github.com/zack1284/Store-Sales-Prediction">Complete Version of Code</a>
+              </p>
+              <p> <a href="https://www.kaggle.com/c/store-sales-time-series-forecasting/overview">Kaggle Competetion's
+                  Link</a></p>
+            </ul>
+
+          </div>
+          <!-- <div class="col-lg-12">
+            <div class="portfolio-info">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: Web design</li>
+                <li><strong>Client</strong>: ASU Company</li>
+                <li><strong>Project date</strong>: 01 March, 2020</li>
+                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+                <button type="submit"
+                  onclick="window.open('./assets/file/GB746 - Snowflake - Best Practices.pdf')">Download!</button>
+              </ul>
+            </div>
+          </div> -->
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
