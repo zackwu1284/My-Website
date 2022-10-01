@@ -91,7 +91,7 @@
                     <h2>Capturing Tweets with Kafka and Elastic Stack</h2>
                     <ol>
                         <li><a href="index.html">Home</a></li>
-                        <li>MLOps</li>
+                        <li>Capturing Tweets with Kafka and Elastic Stack</li>
                     </ol>
                 </div>
 
@@ -120,8 +120,16 @@
                             all the services are green and running.</p>
                         <img src="assets/img/twitter-kafka/Picture0.png" alt="" width="1200" height="600">
                         <br>
+                        <p>We could also soo our kafka cluster is online now. The picture below is from a tool "UI for
+                            Apache Kafka", this tool can help us manage Kafka broker, topics, cluster, etc.</p>
+                        <img src="assets/img/twitter-kafka/Picture4.png" alt="" width="1200" height="350">
+                        <br>
+                        <p>The broker page also shows that our Kafka broker is online and ready-to-go.</p>
+                        <img src="assets/img/twitter-kafka/Picture5.png" alt="" width="1200" height="350">
+                        <br>
                         <h2>Reading and Printing Tweets</h2>
-                        <p>In this stage, we would craw tweets from Twitter with Twitter API. We would also perform text
+                        <p>To start, we need data. Hence, we will craw tweets from Twitter with Twitter API. We would
+                            also perform text
                             cleansing. Next, we load these texts into Kafka's topic:"topic-test". In the picture below,
                             what I am showing on the left is the process of capturing tweets. Everytime we capture a
                             tweet, we would print a message "Writing tweets to kafka... Press Control+C to end..."
@@ -129,6 +137,15 @@
                             simple comsuner written with Python.</p>
                         <img src="assets/img/twitter-kafka/Picture2.png" alt="" width="1200" height="600">
                         <br>
+                        <p>To ensure that Kafka broker did receive the tweets. We could check "UI for Apache Kafka"
+                            again. Now, we see the "topic-test" we named show up in the UI.</p>
+                        <img src="assets/img/twitter-kafka/Picture6.png" alt="" width="1200" height="250">
+                        <br>
+                        <p>When we click on the consumer page, we could see logstash. The data from Kafka would be sent
+                            to logstash first, you could refer this to the architecture on top. If you were curious
+                            about why we didn't see 2 consumers, this is because "python printer" would only be
+                            recognized as consumer only if we are actively printing tweets.</p>
+                        <img src="assets/img/twitter-kafka/Picture7.png" alt="" width="1200" height="250">
                         <h2>Elastic Search</h2>
                         <p>While we open elastic search, we execute a command "GET topic-test/_search", what this line
                             of command would do is printing out the data indexed with "topic-test" on the right side. We
@@ -136,6 +153,11 @@
                             load data into elastic stack.</p>
                         <img src="assets/img/twitter-kafka/Picture3.png" alt="" width="1200" height="600">
                         <p>
+                        <h2>Kibana</h2>
+                        <p>Users could utilize Kibana's analytic tools to perform further analysis.</p>
+                        <img src="assets/img/twitter-kafka/Picture8.png" alt="" width="1200" height="550">
+                        <p>
+                            <br>
                             <a href="https://github.com/zack1284/Capturing-tweets-with-kafka-and-elastic_stack">Complete
                                 Version of
                                 Code</a>
