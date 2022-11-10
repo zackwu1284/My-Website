@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Machine Learning Pipeline with Jenkins</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: iPortfolio - v3.7.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+    <!-- ======= Header ======= -->
+    <header id="header">
+        <div class="d-flex flex-column">
+
+            <div class="profile">
+                <img src="assets/img/Wu_Pei-Heng_01.jpg" alt="" class="img-fluid rounded-circle">
+                <h1 class="text-light"><a href="index.html">Pei-Heng (Zack), Wu</a></h1>
+                <!-- <div class="social-links mt-3 text-center">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div> -->
+
+                <nav id="navbar" class="nav-menu navbar">
+                    <ul>
+                        <li><a href="./index.html#hero" class="nav-link scrollto active"><i class="bx bx-home"></i>
+                                <span>Home</span></a></li>
+                        <li><a href="./index.html#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i>
+                                <span>About
+                                    Me</span></a>
+                        </li>
+                        <li><a href="./index.html#services" class="nav-link scrollto"><i class="bx bx-server"></i>
+                                <span>Projects</span></a></li>
+                        <li><a href="./index.html#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i>
+                                <span>Contact</span></a></li>
+                    </ul>
+                </nav><!-- .nav-menu -->
+            </div>
+    </header><!-- End Header -->
+
+    <!-- <section id="hero2" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero2-container" data-aos="fade-in">
+      <h1>Store Sales Prediction</h1>
+    </div>
+  </section> -->
+    <!-- End Hero -->
+    <main id="main">
+
+        <!-- ======= Breadcrumbs ======= -->
+        <section id="breadcrumbs" class="breadcrumbs">
+            <div class="container">
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2>Machine Learning Pipeline with Jenkins</h2>
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li>Machine Learning Pipeline with Jenkins</li>
+                    </ol>
+                </div>
+
+            </div>
+        </section><!-- End Breadcrumbs -->
+
+        <!-- ======= Portfolio Details Section ======= -->
+        <section id="portfolio-details" class="portfolio-details">
+            <div class="container">
+
+                <div class="row gy-4">
+                    <div class="portfolio-description">
+                        <h2>Introduction</h2>
+                        <p>This project is a self-initiated project for getting familiar with data engineering tools and
+                            data pipeline. In this project, we will build a simple machine learning pipeline. We would
+                            use Jenkins to help us continuously intergrate our models to implement the concept of MLOPS.
+                            In addition,
+                            we will be using our previous project "Microservice based workflow for MLOPS" to help us
+                            store models.</p>
+                        <img src="assets/img/ml_jenkins/picture00.png" alt="" width="1000" height="400">
+                        <br>
+                        <h2>Starting Applications</h2>
+                        <p>We execute our docker-compose command to start all the services at once. Then, we could see
+                            all the services are green and running.The services we are using is our previous project
+                            "Microservice based workflow for MLOPS". We will be using this services to train models and
+                            store models. In jenkins, we will be using the models we stored for continuous
+                            intergration.(CI)</p>
+                        <img src="assets/img/ml_jenkins/picture01.png" alt="" width="600" height="200">
+                        <br>
+                        <p>We could see the services running now.</p>
+                        <img src="assets/img/ml_jenkins/picture02.png" alt="" width="1200" height="500">
+                        <br>
+                        <h2>Starting Jenkins with Docker</h2>
+                        <p>We will be using docker to run our jenkins server. One thing I would like to highlight is
+                            that the way I'm going to train models is creating a docker container and train models
+                            inside it. Therefore, we will be training models inside a container for ML. Morevoer, this
+                            ML container will be inside Jenkins container when we uses Jenkins pipeline for CI. This
+                            would lead to some technical problems so called "docker in docker". In order to solve it, we
+                            will be following steps on
+                            <a href="https://www.jenkins.io/doc/book/installing/docker/">Jenkins's docker
+                                documentation.</a> After following the instructions, we could run our services.
+                        </p>
+                        <br>
+                        <img src="assets/img/ml_jenkins/picture04.png" alt="" width="1200" height="300">
+                        <br>
+                        <p>This is what Jenkins server looks like.</p>
+                        <br>
+                        <img src="assets/img/ml_jenkins/picture05.png" alt="" width="1200" height="600">
+                        <br>
+                        <h2>Create a Jenkins Pipeline</h2>
+                        <p>We create a new Jenkins pipeline, Below we type our scripts to build the pipeline.</p>
+                        <br>
+                        <img src="assets/img/ml_jenkins/picture08.png" alt="" width="1200" height="600">
+                        <br>
+                        <h2>Link Jenkins with Github</h2>
+                        <p>Jenkins server will fetch codes on our Github, once we push the code Jenkins will
+                            automatically execute the pipeline. We will use webhook to help us do that. However, github
+                            webhook won't accept "localhost" or "192.xxx.xxx.xxx" these kind of ip addresses. So we will
+                            be using Nrok to provide us a valid Ip address.</p>
+                        <br>
+                        <img src="assets/img/ml_jenkins/picture06.png" alt="" width="1200" height="600">
+                        <br>
+                        <p>Then we will be using the Ip address from Nrok to configure our webhook.</p>
+                        <img src="assets/img/ml_jenkins/picture07.png" alt="" width="1200" height="600">
+                        <br>
+                        <h2>Testing the Pipeline</h2>
+                        <p>Now, we commit anything to our github to trigger Jenkins. Below is the picture showing that
+                            Jenkins has been triggered. You could look at the "build trigger executor".</p>
+                        <br>
+                        <img src="assets/img/ml_jenkins/picture10.png" alt="" width="1200" height="600">
+                        <br>
+                        <p>We could also check github to see whether the webhook launch successfully.</p>
+                        <br>
+                        <img src="assets/img/ml_jenkins/picture09.png" alt="" width="1200" height="400">
+                        <br>
+                        <p>The picture shows that we have built the pipeline successfully.</p>
+                        <img src="assets/img/ml_jenkins/picture11.png" alt="" width="600" height="300">
+                        <br>
+                        <p>The output prints out the metrics of our models.</p>
+                        <img src="assets/img/ml_jenkins/picture12.png" alt="" width="1200" height="450">
+                        <p>
+                            <br>
+                            <a href="https://github.com/zack1284/Machine-Learning-Pipelines-with-Jenkins">Complete
+                                Version of
+                                Code</a>
+                        </p>
+
+                        </ul>
+
+                    </div>
+                    <!-- <div class="col-lg-12">
+            <div class="portfolio-info">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: Web design</li>
+                <li><strong>Client</strong>: ASU Company</li>
+                <li><strong>Project date</strong>: 01 March, 2020</li>
+                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+                <button type="submit"
+                  onclick="window.open('./assets/file/GB746 - Snowflake - Best Practices.pdf')">Download!</button>
+              </ul>
+            </div>
+          </div> -->
+
+                </div>
+
+            </div>
+        </section><!-- End Portfolio Details Section -->
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+    </footer><!-- End  Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
